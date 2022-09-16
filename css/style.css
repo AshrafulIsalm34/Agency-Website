@@ -1,0 +1,497 @@
+/*===================================================================================================================================||*Agency TemPlate* Typography start||===============================================================================================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+dl, ol, ul {
+    list-style-type: none;
+}
+
+img{
+    border: none;
+}
+
+:root{
+    --bs-white:#ffffff;
+    --bs-green:#44c0c2;
+    --bs-dark-green:#49CBCD;
+    --bs-dark-green:#49cbcd;
+    --bs-black:#484c55;
+    --bs-dark-black:#4e525d;
+}
+
+/*===================================================================================================================================||*Agency TemPlate* Typography end||===============================================================================================================================*/
+
+
+
+
+/*===================================================================================================================================||*Agency TemPlate* nav part start||===============================================================================================================================*/
+.navbar {
+	padding-top: 0rem; 
+	padding-bottom: 0rem;
+}
+
+.navbar-light .navbar-brand,.navbar-light .navbar-brand:hover {
+    color:var(--bs-green);
+    font-family: "Lobster1.4";
+    font-size: 43px;
+}
+
+.navbar-brand {
+   	padding-top: 0rem;
+   	padding-bottom: 0rem; 
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem;
+    margin-right: 10px;
+    transition: all 1s ease;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	background: #d7dade;
+	color: var(--bs-green);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--bs-green);
+    top: 100%;
+    right: 0%;
+    opacity: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:after,.navbar-expand-lg .navbar-nav .nav-link.active:after{
+	opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--bs-green);
+    background: #d7dade;
+}
+
+.navbar-light .navbar-toggler {
+    padding: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    position: relative;
+    top: -15px;
+    right: 15px;
+}
+.navbar-collapse {
+    width: 75%;
+}
+
+/*===================================================================================================================================||*Agency TemPlate* nav part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  banner part start||===============================================================================================================================*/
+
+.banner{
+	background: url('../images/banner_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 120px 0px;
+}
+
+.banner_text h2{
+	font-weight: 600;
+	font-size: 63px;
+}
+
+.banner_text p{
+	font-size: 23px;
+    margin-bottom: 3rem;
+}
+
+
+.banner_text a{
+	padding: 10px 30px;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: var(--bs-black);
+	transition: all 0.5s ease;
+}
+
+.banner_text a:hover{
+	color: var(--bs-white);
+}
+/*===================================================================================================================================||*Agency TemPlate*  banner part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  service part start||===============================================================================================================================*/
+
+.service{
+	padding: 100px;
+}
+
+.circale {
+    padding: 23px;
+    border: 2px solid var(--bs-dark-green);
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--bs-dark-green);
+}
+
+.service_text h2{
+	margin-top: 50px;
+	font-size: 22px;
+	color: var(--bs-dark-black);
+}
+
+.service_text p{
+	font-size: 14px;
+	color: var(--bs-dark-black);
+}
+
+.service_text a{
+	padding: 10px 20px;
+	background: var(--bs-green);
+	border-radius: 5px;
+	color: var(--bs-black);
+	transition: all 0.5s ease;
+}
+
+.service_text a:hover{
+	color: var(--bs-white);
+}
+
+/*===================================================================================================================================||*Agency TemPlate*  service part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Portfolio part start||===============================================================================================================================*/
+
+.portfolio{
+	background: #F1F1F1;
+	padding: 60px 0px;
+}
+
+.portfolio_content h2{
+	padding-bottom: 20px;
+	font-size: 42px;
+	color: var(--bs-dark-black);
+}
+.btn a{
+	padding: 15px 40px;
+	background: var(--bs-dark-green);
+	border-radius: 5px;
+	color: var(--bs-black);
+	transition: all 0.5s ease;
+}
+
+.btn a:hover{
+	color: var(--bs-white);
+}
+/*===================================================================================================================================||*Agency TemPlate*  portfolio part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Team part start||===============================================================================================================================*/
+
+.team{
+	padding: 100px 0px;
+}
+
+.team_header h1{
+	font-size: 42px;
+	color: var(--bs-dark-black);
+}
+
+.team_content{
+	
+}
+
+.team_content img{
+	width: 200px;
+	height: auto;
+	border-radius: 50%;
+	padding: 60px 0px;
+}
+
+.plus_link{
+	position: relative;
+    top: 35%;
+    transform: translate(-35%);
+    padding: 94px 82px 88px 82px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.plus_oparator{
+	font-size: 40px;
+	color: #f46d6d;
+	font-weight: 800;
+}
+
+.plus_link:hover,.plus_link.active{
+	opacity: 1;
+}
+
+.team_content h3{
+	font-size: 22px;
+	color: var(--bs-dark-black);
+}
+
+.team_content h5,.team_content p{
+	font-size: 14px;
+	color: var(--bs-dark-black);
+}
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Team part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  price part start||===============================================================================================================================*/
+
+
+.price{
+	background: #F1F1F1;
+	padding: 100px 0px;
+}
+
+.card{
+	transition: all 0.5s ease;
+}
+
+.card-body{
+    padding: 0rem 0rem;
+}
+
+.card-body li{
+	border-bottom: 1px solid #ECF0F1;
+	padding: 10px 0px;
+	list-style-type: none;
+	font-size: 14px;
+	color: #8c9299;
+}
+
+.card-body li:last-child{
+	border-bottom:0px;
+}
+
+.card-header{
+	font-size: 26px;
+	color: var(--bs-white);
+	background: #485460;
+	transition: all 0.5s ease;
+}
+
+.card-header:hover{
+	
+}
+
+.money{
+	font-size: 30px;
+}
+
+.card-footer{
+	padding: 30px 0px;
+	background: #F8F9FB;
+}
+
+.card-footer a{
+	font-weight: 500;
+	color: var(--bs-white);
+	padding: 10px 40px;
+	background: #D2D6DA;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+}
+
+.card:hover {
+	transform: translateY(-30px);
+}
+
+.card:hover .money{
+	color: var(--bs-dark-green);
+}
+
+.card:hover .card-header,.card:hover .card-footer a{
+	background: var(--bs-dark-green);
+}
+
+.card_second{
+	transform: translateY(-30px);
+}
+
+.card_second .card-header,.card_second .card-footer a{
+	background: var(--bs-dark-green);
+}
+
+.card-body .active{
+	color: var(--bs-dark-green);
+}
+
+
+/*===================================================================================================================================||*Agency TemPlate*  price part end||===============================================================================================================================*/
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Feedback part start||===============================================================================================================================*/
+
+.feedbacks{
+	padding: 100px 0px;
+}
+
+button {
+    width: 40px;
+    height: 8px;
+    margin-right: 10px;
+    background: #5fcc4b;
+    border-radius: 5px;
+}
+
+.carousel-control-prev {
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    background: #6d6a6d;
+    border: none;
+}
+.carousel-control-next {
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    background: #6d6a6d;
+    border: none;
+}
+
+.carousel-indicators {
+    bottom: -30px;
+}
+
+.box h2{
+	font-size: 42px;
+	color: var(--bs-dark-black);
+}
+.box p{
+	font-size: 19px;
+	color: var(--bs-dark-black);
+}
+.box h4{
+	font-size: 21px;
+	color: #9a8faf;
+}
+/*===================================================================================================================================||*Agency TemPlate*  Feedback part end||===============================================================================================================================*/
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Contact part start||===============================================================================================================================*/
+
+.contacts{
+	padding: 100px 0px;
+	background: url('../images/contact_bg.jpg')no-repeat;
+	background-size: cover;
+}
+
+.contact_left h3{
+	font-size: 24px;
+}
+
+.contact_left p{
+	font-size: 14px;
+	color: var(--bs-black);
+}
+
+.contact_left ul {
+    padding: 10px 0px;
+}
+
+.contact_left ul li{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: red;
+	margin-right: 15px;
+	border-radius: 50%;
+	display: grid;
+    place-items: center;
+}
+
+.contact_left ul li a {
+	color: var(--bs-white);
+}
+
+.contact_left ul .blue {
+	background: #3B5997;
+}
+
+.contact_left ul .green{
+	background: #3EC2F3;
+}
+
+.contact_left ul .orange{
+	background: #E44C41;
+}
+
+.address{
+	color: #bface2;
+	font-size: 14px;
+}
+
+.form-button button {
+    width: 150px;
+    height: auto;
+    border: 1px solid #50d1c0 !important;
+    border-radius: 5px;
+    margin: 0px 12px;
+    padding: 10px 2px;
+    outline: none;
+    color: var(--bs-black);
+    background: #49CBCD;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.form-button button:hover{
+	color: var(--bs-white);
+}
+
+/*===================================================================================================================================||*Agency TemPlate*  Contact part end||===============================================================================================================================*/
+
+
+
+
+/*===================================================================================================================================||*Agency TemPlate*  Preloder css start||===============================================================================================================================*/
+
+
+.preloder{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+}
+.preloder img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*===================================================================================================================================||*Agency TemPlate*  Preloder css end||===============================================================================================================================*/
+
